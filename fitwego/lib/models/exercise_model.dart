@@ -5,7 +5,7 @@ class Exercise {
   final String muscle;
   final List<SetData> sets;
 
-  Exercise({
+  const Exercise({
     required this.name,
     required this.muscle,
     required this.sets,
