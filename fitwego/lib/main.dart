@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:fitwego/screens/exercise_screen.dart';
+import 'package:fitwego/screens/gym_map_screen.dart';
 import 'package:fitwego/screens/login_screen.dart';
 import 'package:fitwego/screens/main_nav_screen.dart';
+import 'package:fitwego/screens/nearby_gyms_screen.dart';
 import 'package:fitwego/screens/onboarding_activity.dart';
 import 'package:fitwego/screens/onboarding_age.dart';
 import 'package:fitwego/screens/onboarding_bodyfat.dart';
@@ -37,6 +39,8 @@ class FitWeGoApp extends StatelessWidget {
         '/onboarding-complete': (context) => const OnboardingComplete(),
         '/main': (context) => const MainNavScreen(),
         '/exercise': (context) => const ExerciseScreen(),
+        '/gym-centre': (context) => const GymMapScreen(),
+        '/nearby-gyms': (context) => const NearbyGymsScreen(),
       },
     );
   }

@@ -72,6 +72,14 @@ class _HomeTab extends StatelessWidget {
           onTap: () => Navigator.pushNamed(context, '/exercise'),
         ),
         const SizedBox(height: 16),
+        _FeatureCard(
+          title: 'Gym Centre',
+          subtitle: 'Find nearby gyms on a demo map and open detailed gym cards.',
+          icon: Icons.map_rounded,
+          buttonLabel: 'Explore Gyms',
+          onTap: () => Navigator.pushNamed(context, '/gym-centre'),
+        ),
+        const SizedBox(height: 16),
         const _InfoCard(
           title: 'Calories',
           value: '1,840',
