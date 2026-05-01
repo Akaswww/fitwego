@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:fitwego/screens/login_screen.dart';
-import 'package:fitwego/screens/onboarding_gender.dart';
 import 'package:fitwego/screens/exercise_screen.dart';
+import 'package:fitwego/screens/gym_map_screen.dart';
+import 'package:fitwego/screens/login_screen.dart';
+import 'package:fitwego/screens/main_nav_screen.dart';
+import 'package:fitwego/screens/nearby_gyms_screen.dart';
+import 'package:fitwego/screens/onboarding_activity.dart';
+import 'package:fitwego/screens/onboarding_age.dart';
+import 'package:fitwego/screens/onboarding_bodyfat.dart';
+import 'package:fitwego/screens/onboarding_complete.dart';
+import 'package:fitwego/screens/onboarding_gender.dart';
+import 'package:fitwego/screens/onboarding_height.dart';
+import 'package:fitwego/screens/onboarding_weight.dart';
 import 'package:fitwego/theme/app_theme.dart';
 
 void main() {
@@ -17,13 +26,21 @@ class FitWeGoApp extends StatelessWidget {
       title: "FitWeGo",
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkTheme,
-
-      initialRoute: '/exercise',
+      initialRoute: '/login',
 
       routes: {
         '/login': (context) => const LoginScreen(),
         '/onboarding-gender': (context) => const OnboardingGender(),
+        '/onboarding-age': (context) => const OnboardingAge(),
+        '/onboarding-height': (context) => const OnboardingHeight(),
+        '/onboarding-weight': (context) => const OnboardingWeight(),
+        '/onboarding-bodyfat': (context) => const OnboardingBodyFat(),
+        '/onboarding-activity': (context) => const OnboardingActivity(),
+        '/onboarding-complete': (context) => const OnboardingComplete(),
+        '/main': (context) => const MainNavScreen(),
         '/exercise': (context) => const ExerciseScreen(),
+        '/gym-centre': (context) => const GymMapScreen(),
+        '/nearby-gyms': (context) => const NearbyGymsScreen(),
       },
     );
   }

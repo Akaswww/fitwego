@@ -5,7 +5,7 @@ class SetData {
   final int? previousReps;
   final double? previousWeight;
 
-  SetData({
+  const SetData({
     required this.setNumber,
     required this.reps,
     required this.weight,
